@@ -636,8 +636,8 @@ msgid ""
 "# echo 'FreeBSD-ports: { url: \"pkg+https://pkg.FreeBSD.org/${ABI}/latest\" }' > /usr/local/etc/pkg/repos/FreeBSD.conf\n"
 msgstr ""
 "# mkdir -p /usr/local/etc/pkg/repos\n"
-"# echo 'FreeBSD-ports: { url: \"pkg+https://pkg.FreeBSD.org/${ABI}/latest\" }"
-"' > /usr/local/etc/pkg/repos/FreeBSD.conf\n"
+"# echo 'FreeBSD-ports: { url: \"pkg+https://pkg.FreeBSD.org/${ABI}/latest\" }' > /"
+"usr/local/etc/pkg/repos/FreeBSD.conf\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ports/_index.adoc:208
