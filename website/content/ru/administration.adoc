@@ -371,5 +371,5 @@ https://www.freebsd.org/ru/releng/charter/[Устав команды подго�
 //
 // The FreeBSD Russian Documentation Project
 //
-// Original EN revision (27.06.2026): 40d1da1ede3d1c81cbff2a9b916c60c5debc6066
+// Original EN revision (01.07.2026): f37462900694c88218150184bd1d06dd241b2027
 //
