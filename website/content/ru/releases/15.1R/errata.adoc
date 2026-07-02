@@ -63,9 +63,8 @@ sidenav: download
 [width="100%",cols="40%,30%,30%",options="header",]
 |===
 |Исправление и дополнение |Дата |Тема
-
-|Уведомления отсутствуют.||
-
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-EN-26:16.arm64.asc[FreeBSD-EN-26:16.arm64] |30 июня 2026 |32-разрядные версии функций setcontext(2) и swapcontext(2) на платформе arm64 работают некорректно
+|link:https://www.FreeBSD.org/security/advisories/FreeBSD-EN-26:17.rpcsec_tls.asc[FreeBSD-EN-26:17.rpcsec_tls] |30 июня 2026 |Исчерпание счётчика ссылок на сетевые соединения в сервере NFS
 |===
 
 [[open-issues]]
@@ -87,5 +86,5 @@ sidenav: download
 //
 // The FreeBSD Russian Documentation Project
 //
-// Original EN revision (01.07.2026): c825b69ca0b0cdd41f3980c9dd4b45ce6cded427
+// Original EN revision (01.07.2026): 4eb8e14cf00470133959e55fc319de5834b00188
 //
