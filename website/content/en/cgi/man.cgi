@@ -1280,7 +1280,6 @@ while ( ( $key, $val ) = each %manPath ) {
     'dragonfly',  'DragonFly 6.4.2',
     'centos',     'CentOS 7.9',
     'rocky',      'Rocky 10.1',
-    'linux',      'Debian 13.4.0',
     'darwin',     'Darwin 8.0.1/ppc',
     'opendarwin', 'OpenDarwin 7.2.1',
     'macosx',     'Darwin 8.0.1/ppc',
