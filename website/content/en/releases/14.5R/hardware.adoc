@@ -252,7 +252,7 @@ This means that some devices, which are supported by multiple drivers, may appea
 
 
 Controllers supported by the
-**aac**
+man:aac[4]
 driver include:
 
 *	Adaptec AAC-364
@@ -343,7 +343,7 @@ driver include:
 
 
 The
-**aacraid**
+man:aacraid[4]
 driver supports the following
 Adaptec 6G and 12G SAS/SATA RAID controllers:
 
@@ -361,7 +361,7 @@ Adaptec 6G and 12G SAS/SATA RAID controllers:
 
 
 The
-**ahc**
+man:ahc[4]
 driver supports the following
 `SCSI`
 host adapter chips and
@@ -477,7 +477,7 @@ controller cards:
 
 
 The
-**ahci**
+man:ahci[4]
 driver supports AHCI compatible controllers having PCI class 1 (mass storage),
 subclass 6 (SATA) and programming interface 1 (AHCI).
 
@@ -508,7 +508,7 @@ device.
 
 
 The
-**ahd**
+man:ahd[4]
 driver supports the following:
 
 *	Adaptec
@@ -533,7 +533,7 @@ driver supports the following:
 
 
 The
-**arcmsr**
+man:arcmsr[4]
 driver supports the following cards:
 
 *	ARC-1110
@@ -582,7 +582,7 @@ driver supports the following cards:
 
 
 The
-**ata**
+man:ata[4]
 driver supports the IDE interface on the following ATA/SATA controllers:
 
 Acard:
@@ -688,7 +688,7 @@ not known what the chipset can do and how to program it.
 
 
 The
-**ciss**
+man:ciss[4]
 driver supports controllers implementing
 Common Interface for SCSI-3 Support Open Specification v1.04, including:
 
@@ -703,10 +703,19 @@ Common Interface for SCSI-3 Support Open Specification v1.04, including:
 *	HP Smart Array 6400 EM
 *	HP Smart Array E200
 *	HP Smart Array E200i
+*	HP Smart Array E500
+*	HP Smart Array H240
+*	HP Smart Array H240ar
+*	HP Smart Array H240nr
+*	HP Smart Array H241
+*	HP Smart Array H244br
 *	HP Smart Array P212
 *	HP Smart Array P220i
 *	HP Smart Array P222
 *	HP Smart Array P230i
+*	HP Smart Array P240nr
+*	HP Smart Array P244br
+*	HP Smart Array P246br
 *	HP Smart Array P400
 *	HP Smart Array P400i
 *	HP Smart Array P410
@@ -718,18 +727,34 @@ Common Interface for SCSI-3 Support Open Specification v1.04, including:
 *	HP Smart Array P430
 *	HP Smart Array P430i
 *	HP Smart Array P431
+*	HP Smart Array P440
 *	HP Smart Array P440ar
+*	HP Smart Array P441
 *	HP Smart Array P530
 *	HP Smart Array P531
+*	HP Smart Array P542d
 *	HP Smart Array P600
+*	HP Smart Array P700m
+*	HP Smart Array P712m
 *	HP Smart Array P721m
 *	HP Smart Array P731m
+*	HP Smart Array P741m
 *	HP Smart Array P800
 *	HP Smart Array P812
+*	HP Smart Array P822
 *	HP Smart Array P830
 *	HP Smart Array P830i
+*	HP Smart Array P840
+*	HP Smart Array P840ar
+*	HP Smart Array P841
 *	HP Modular Smart Array 20 (MSA20)
 *	HP Modular Smart Array 500 (MSA500)
+
+Additionally, several HP Smart Array controllers are supported by PCI
+subdevice ID only, as no model name is available for them:
+0x3220, 0x3222, 0x3230, 0x3231, 0x3232, 0x3233, 0x3236, 0x3238,
+0x3239, 0x323A, 0x323B, 0x323C, and 0x324B
+(all with PCI subvendor 0x103C).
 
 
 [NOTE]
@@ -740,7 +765,7 @@ EISA adapters are not supported.
 
 
 The
-**hpt27xx**
+man:hpt27xx[4]
 driver supports the following SAS
 controllers:
 
@@ -753,7 +778,7 @@ controllers:
 
 
 The
-**hptiop**
+man:hptiop[4]
 driver supports the following SAS and SATA RAID controllers:
 
 *	HighPoint RocketRAID 4522
@@ -793,7 +818,7 @@ are already End-of-Life:
 
 
 The
-**hptmv**
+man:hptmv[4]
 driver supports the following ATA RAID
 controllers:
 
@@ -802,7 +827,7 @@ controllers:
 
 
 The
-**hptnr**
+man:hptnr[4]
 driver supports the following SATA
 controllers:
 
@@ -812,7 +837,7 @@ controllers:
 
 
 The
-**hptrr**
+man:hptrr[4]
 driver supports the following RAID
 controllers:
 
@@ -830,7 +855,7 @@ controllers:
 
 
 The following controllers are supported by the
-**ida**
+man:ida[4]
 driver:
 
 *	Compaq SMART Array 221
@@ -846,7 +871,7 @@ driver:
 
 
 Controllers supported by the
-**ips**
+man:ips[4]
 driver include:
 
 *	IBM ServeRAID 3H
@@ -864,7 +889,7 @@ driver.
 
 
 The
-**isci**
+man:isci[4]
 driver provides support for Intel C600
 `SAS`
 controllers.
@@ -872,7 +897,7 @@ controllers.
 
 
 The
-**isp**
+man:isp[4]
 driver supports the following optical Fibre Channel adapters:
 
 	Model:                               Speed:   Bus:  
@@ -890,7 +915,7 @@ driver supports the following optical Fibre Channel adapters:
 
 
 The
-**mfi**
+man:mfi[4]
 driver supports the following hardware:
 
 *	LSI MegaRAID SAS 1078
@@ -912,7 +937,7 @@ driver supports the following hardware:
 
 
 The
-**mlx**
+man:mlx[4]
 driver supports the following Parallel SCSI RAID controllers:
 
 *	Mylex DAC960P (Wide Fast SCSI-2)
@@ -937,13 +962,13 @@ EISA adapters are not supported.
 
 
 The
-**mmcsd**
+man:mmcsd[4]
 driver implements direct access block device for MMC and SD memory cards.
 
 
 
 These controllers are supported by the
-**mpi3mr**
+man:mpi3mr[4]
 driver:
 
 *	Broadcom Ltd. SAS 4116 Tri-Mode RAID Adapter
@@ -960,7 +985,7 @@ driver:
 
 
 These controllers are supported by the
-**mpr**
+man:mpr[4]
 driver:
 
 *	Broadcom Ltd./Avago Tech (LSI) SAS 3004 (4 Port SAS)
@@ -983,7 +1008,7 @@ driver:
 
 
 These controllers are supported by the
-**mps**
+man:mps[4]
 driver:
 
 *	Broadcom Ltd./Avago Tech (LSI) SAS 2004 (4 Port SAS)
@@ -1001,7 +1026,7 @@ driver:
 
 
 The following controllers are supported by the
-**mpt**
+man:mpt[4]
 driver:
 
 *	LSI Logic 53c1030,
@@ -1072,8 +1097,8 @@ can take on - no separate compilation is required.
 
 
 The
-**mrsas**
-driver supports the following LSI/Broadcom SATA/SAS RAID controllers:
+man:mrsas[4]
+driver supports the following Broadcom/LSI SATA/SAS RAID controllers:
 
 	Controller               Chip            Speed  
 	Broadcom SAS3916         Aero            12Gb/s  
@@ -1103,7 +1128,7 @@ driver supports the following LSI/Broadcom SATA/SAS RAID controllers:
 
 
 The
-**mvs**
+man:mvs[4]
 driver supports the following controllers:
 
 Gen-I (SATA 1.5Gbps):
@@ -1137,7 +1162,7 @@ ATAPI and non-DMA ATA commands executed one by one for each port.
 
 
 The
-**ocs_fc**
+man:ocs_fc[4]
 driver supports these Fibre Channel adapters:
 
 Emulex 16/8G FC GEN 5 HBAS
@@ -1157,7 +1182,7 @@ Emulex 64/32G FC GEN 7 HBAS
 
 
 The
-**pms**
+man:pms[4]
 driver supports the following hardware:
 
 *	Tachyon TS Fibre Channel Card
@@ -1194,14 +1219,14 @@ driver supports the following hardware:
 
 
 The
-**pst**
+man:pst[4]
 driver supports the Promise Supertrak SX6000 ATA hardware RAID
 controller.
 
 
 
 The
-**sdhci**
+man:sdhci[4]
 driver supports different specification compatible chips.
 The following chips have been verified to work:
 
@@ -1214,7 +1239,7 @@ The following chips have been verified to work:
 
 
 The
-**siis**
+man:siis[4]
 driver supports the following controller chips:
 
 *	SiI3124 (PCI-X 133MHz/64bit, 4 ports)
@@ -1225,7 +1250,7 @@ driver supports the following controller chips:
 
 
 Controllers supported by the
-**smartpqi**
+man:smartpqi[4]
 driver include, but not limited to:
 
 *	HPE Gen10 Smart Array Controller Family
@@ -1236,7 +1261,7 @@ driver include, but not limited to:
 
 
 The
-**sym**
+man:sym[4]
 driver provides support for the following Symbios/LSI Logic PCI SCSI
 controllers:
 
@@ -1275,7 +1300,7 @@ one of the following add-on boards:
 
 
 The
-**tws**
+man:tws[4]
 driver supports the following SATA/SAS RAID controller:
 
 *	LSI's 3ware SAS 9750 series
@@ -1296,7 +1321,7 @@ The following CD-ROM type systems are supported at this time:
 
 
 The
-**ae**
+man:ae[4]
 driver supports Attansic/Atheros L2 PCIe FastEthernet controllers, and
 is known to support the following hardware:
 
@@ -1308,7 +1333,7 @@ Other hardware may or may not work with this driver.
 
 
 The
-**age**
+man:age[4]
 driver provides support for LOMs based on
 Attansic/Atheros L1 Gigabit Ethernet controller chips, including:
 
@@ -1333,7 +1358,7 @@ Attansic/Atheros L1 Gigabit Ethernet controller chips, including:
 
 
 The
-**alc**
+man:alc[4]
 device driver provides support for the following Ethernet controllers:
 
 *	Atheros AR8131 PCI Express Gigabit Ethernet controller
@@ -1353,7 +1378,7 @@ device driver provides support for the following Ethernet controllers:
 
 
 The
-**ale**
+man:ale[4]
 device driver provides support for the following Ethernet controllers:
 
 *	Atheros AR8113 PCI Express Fast Ethernet controller
@@ -1363,7 +1388,7 @@ device driver provides support for the following Ethernet controllers:
 
 
 The
-**aue**
+man:aue[4]
 driver supports the following USB Fast Ethernet adapters based on the
 ADMtek AN986 Pegasus chipset:
 
@@ -1392,7 +1417,7 @@ ADMtek AN986 Pegasus chipset:
 
 
 The
-**axe**
+man:axe[4]
 driver supports ASIX Electronics AX88172/AX88178/AX88772/AX88772A/AX88772B/AX88760
 based USB Ethernet adapters including:
 
@@ -1448,7 +1473,7 @@ AX88760:
 
 
 The
-**axge**
+man:axge[4]
 driver supports the following USB Gigabit Ethernet controllers:
 
 *	ASIX Electronics AX88179A
@@ -1458,7 +1483,7 @@ driver supports the following USB Gigabit Ethernet controllers:
 
 
 The
-**bce**
+man:bce[4]
 driver provides support for various NICs based on the QLogic NetXtreme II
 family of Gigabit Ethernet controllers, including the
 following:
@@ -1492,7 +1517,7 @@ The man:bfe[4] driver supports Broadcom BCM4401-based Fast Ethernet devices.
 
 
 The
-**bge**
+man:bge[4]
 driver provides support for various NICs based on the Broadcom BCM570x
 family of Gigabit Ethernet controller chips, including the
 following:
@@ -1519,7 +1544,7 @@ following:
 
 
 The
-**bnxt**
+man:bnxt[4]
 driver provides support for various NICs based on the Broadcom NetXtreme-C and
 NetXtreme-E families of Gigabit Ethernet controller chips, including the
 following:
@@ -1549,7 +1574,7 @@ following:
 
 
 The
-**bxe**
+man:bxe[4]
 driver provides support for various NICs based on the QLogic NetXtreme II
 family of 10Gb Ethernet controller chips, including the following:
 
@@ -1568,7 +1593,7 @@ family of 10Gb Ethernet controller chips, including the following:
 
 
 The chips supported by the
-**cas**
+man:cas[4]
 driver are:
 
 *	National Semiconductor DP83065 Saturn Gigabit Ethernet
@@ -1594,7 +1619,7 @@ driver at this time:
 
 
 The
-**cdce**
+man:cdce[4]
 driver supports USB Ethernet interfaces implementing the
 USB Communication Device Class Ethernet Control Model (CDC ECM) or
 Network Control Model (CDC NCM) protocol, such as:
@@ -1609,7 +1634,7 @@ Network Control Model (CDC NCM) protocol, such as:
 
 
 The
-**cue**
+man:cue[4]
 driver supports CATC USB-EL1210A based USB Ethernet
 adapters including:
 
@@ -1621,7 +1646,7 @@ adapters including:
 
 
 The
-**cxgb**
+man:cxgb[4]
 driver supports 10 Gigabit and 1 Gigabit Ethernet adapters based on the T3 and T3B chipset:
 
 *	Chelsio 10GBase-CX4
@@ -1631,7 +1656,7 @@ driver supports 10 Gigabit and 1 Gigabit Ethernet adapters based on the T3 and T
 
 
 The
-**cxgbe**
+man:cxgbe[4]
 driver supports 100Gb and 25Gb Ethernet adapters based on the T6 ASIC:
 
 *	Chelsio T6225-CR
@@ -1675,7 +1700,7 @@ driver supports 10Gb and 1Gb Ethernet adapters based on the T4 ASIC:
 
 
 The
-**cxgbev**
+man:cxgbev[4]
 driver supports Virtual Functions on 100Gb and 25Gb Ethernet adapters
 based on the T6 ASIC:
 
@@ -1722,7 +1747,7 @@ on the T4 ASIC:
 
 
 The
-**dc**
+man:dc[4]
 driver provides support for the following chipsets:
 
 *	DEC/Intel 21143
@@ -1785,7 +1810,7 @@ driver at this time:
 
 Gigabit Ethernet controllers built into the following Freescale
 system-on-chip devices are known to work with the
-**dtsec**
+man:dtsec[4]
 driver:
 
 *	P2041, P3041
@@ -1799,7 +1824,7 @@ Additionally, the following devices are expected to work, but are untested:
 
 
 The
-**em**
+man:em[4]
 driver supports Gigabit Ethernet adapters based on the Intel
 82540, 82541ER, 82541PI, 82542, 82543, 82544, 82545, 82546, 82546EB,
 82546GB, 82547, 82571, 82572, 82573, 82574, 82575, 82576, and 82580
@@ -1839,14 +1864,14 @@ The man:ena[4] driver supports the AWS EC2 Elastic Network Adapter.
 
 
 The
-**enic**
+man:enic[4]
 driver should supports all known Cisco VIC cards.
 
 
 
 
 The
-**et**
+man:et[4]
 driver supports Agere ET1310 10/100/Gigabit
 Ethernet adapters.
 
@@ -1855,7 +1880,7 @@ Ethernet adapters.
 
 
 Adapters supported by the
-**fxp**
+man:fxp[4]
 driver include:
 
 *	Intel EtherExpress PRO/10
@@ -1871,7 +1896,7 @@ driver include:
 
 
 Chips supported by the
-**gem**
+man:gem[4]
 driver include:
 
 *	Apple GMAC
@@ -1888,7 +1913,7 @@ driver at this time:
 
 
 The
-**genet**
+man:genet[4]
 driver supports the Ethernet controller portion of the Broadcom BCM2711
 on the Raspberry Pi 4 Model B and related systems.
 It utilizes the BCM54213PE PHY.
@@ -1899,7 +1924,7 @@ The man:gve[4] driver supports the Google Cloud Compute Engine (GCE) Virtual NIC
 
 
 The
-**ice**
+man:ice[4]
 driver supports the Intel Ethernet 800 series.
 Most adapters in this series with SFP28/QSFP28 cages
 have firmware that requires that Intel qualified modules are used; these
@@ -1910,10 +1935,40 @@ The
 **ice**
 driver supports 100Gb Ethernet adapters with these QSFP28 modules:
 
+*	Intel&#174; 100G QSFP28 100GBASE-SR4   E100GQSFPSR28SRX
+*	Intel&#174; 100G QSFP28 100GBASE-SR4   SPTMBP1PMCDF
+*	Intel&#174; 100G QSFP28 100GBASE-CWDM4 SPTSBP3CLCCO
+*	Intel&#174; 100G QSFP28 100GBASE-DR    SPTSLP2SLCDF
+
+The
+**ice**
+driver supports 25Gb and 10Gb Ethernet adapters with these SFP28 modules:
+
+*	Intel&#174; 10G/25G SFP28 25GBASE-SR E25GSFP28SR
+*	Intel&#174;     25G SFP28 25GBASE-SR E25GSFP28SRX (Extended Temp)
+*	Intel&#174;     25G SFP28 25GBASE-LR E25GSFP28LRX (Extended Temp)
+
+The
+**ice**
+driver supports 10Gb and 1Gb Ethernet adapters with these SFP+ modules:
+
+*	Intel&#174; 1G/10G SFP+ 10GBASE-SR E10GSFPSR
+*	Intel&#174; 1G/10G SFP+ 10GBASE-SR E10GSFPSRG1P5
+*	Intel&#174; 1G/10G SFP+ 10GBASE-SR E10GSFPSRG2P5
+*	Intel&#174;    10G SFP+ 10GBASE-SR E10GSFPSRX (Extended Temp)
+*	Intel&#174; 1G/10G SFP+ 10GBASE-LR E10GSFPLR
+
+Note that adapters also support all passive and active
+limiting direct attach cables that comply with SFF-8431 v4.1 and
+SFF-8472 v10.4 specifications.
+
+This is not an exhaustive list; please consult product documentation for an
+up-to-date list of supported media.
+
 
 
 The
-**igc**
+man:igc[4]
 driver supports the following models:
 
 *	I220-V
@@ -1932,7 +1987,7 @@ driver supports the following models:
 
 
 The following devices are supported by the
-**ipheth**
+man:ipheth[4]
 driver:
 
 *	Apple iPhone tethering (all models)
@@ -1941,7 +1996,7 @@ driver:
 
 
 The
-**ix**
+man:ix[4]
 driver supports Intel 10Gb Ethernet PCIe adapters,
 including:
 
@@ -1958,7 +2013,7 @@ including:
 
 
 The
-**ixl**
+man:ixl[4]
 driver supports the Intel Ethernet 700 series.
 Most adapters in this series with SFP+/SFP28/QSFP+ cages
 have firmware that requires that Intel qualified modules are used; these
@@ -2001,7 +2056,7 @@ up-to-date list of supported media.
 
 
 The
-**jme**
+man:jme[4]
 device driver provides support for the following Ethernet controllers:
 
 *	JMicron JMC250 PCI Express Gigabit Ethernet controller
@@ -2012,7 +2067,7 @@ device driver provides support for the following Ethernet controllers:
 
 
 The
-**kue**
+man:kue[4]
 driver supports Kawasaki LSI KL5KLUSB101B based USB Ethernet
 adapters including:
 
@@ -2036,7 +2091,7 @@ adapters including:
 
 
 Adapters supported by the
-**lge**
+man:lge[4]
 driver include:
 
 *	SMC TigerCard 1000 (SMC9462SX)
@@ -2045,7 +2100,7 @@ driver include:
 
 
 The
-**liquidio**
+man:liquidio[4]
 driver supports the following cards:
 
 *	LiquidIO II CN2350 210SV/225SV
@@ -2054,7 +2109,7 @@ driver supports the following cards:
 
 
 The
-**mgb**
+man:mgb[4]
 driver supports Microchip PCIe Gigabit Ethernet interfaces, including:
 
 *	Microchip LAN7430 PCIe Gigabit Ethernet controller with PHY
@@ -2063,7 +2118,7 @@ driver supports Microchip PCIe Gigabit Ethernet interfaces, including:
 
 
 The
-**mlx4en**
+man:mlx4en[4]
 driver supports the following network adapters:
 
 *	Mellanox ConnectX-2 (ETH)
@@ -2072,7 +2127,7 @@ driver supports the following network adapters:
 
 
 The
-**mlx4ib**
+man:mlx4ib[4]
 driver supports the following network adapters:
 
 *	Mellanox ConnectX-2 (IB)
@@ -2081,7 +2136,7 @@ driver supports the following network adapters:
 
 
 The
-**mlx5en**
+man:mlx5en[4]
 driver supports 200Gb, 100Gb, 50Gb, 40Gb, 25Gb and 10Gb ethernet adapters.
 
 *	ConnectX-6 supports 10/20/25/40/50/56/100Gb/200Gb/s speeds.
@@ -2092,7 +2147,7 @@ driver supports 200Gb, 100Gb, 50Gb, 40Gb, 25Gb and 10Gb ethernet adapters.
 
 
 The
-**mlx5ib**
+man:mlx5ib[4]
 driver supports 100Gb, 50Gb, 40Gb, 25Gb and 10Gb network adapters.
 ConnectX-4 supports: 10/20/25/40/50/56/100Gb/s speeds.
 ConnectX-4 LX supports: 10/25/40/50Gb/s speeds (and reduced power consumption):
@@ -2115,7 +2170,7 @@ ConnectX-4 LX supports: 10/25/40/50Gb/s speeds (and reduced power consumption):
 
 
 Adapters supported by the
-**mos**
+man:mos[4]
 driver include:
 
 *	Sitecom LN030
@@ -2123,7 +2178,7 @@ driver include:
 
 
 The
-**msk**
+man:msk[4]
 driver provides support for various NICs based on the Marvell/SysKonnect
 Yukon II based Gigabit Ethernet controller chips, including:
 
@@ -2164,7 +2219,7 @@ Yukon II based Gigabit Ethernet controller chips, including:
 
 
 The
-**muge**
+man:muge[4]
 driver supports Microchip USB Gigabit Ethernet interfaces, including:
 
 *	Microchip LAN7800 USB 3.1 Gigabit Ethernet controller with PHY
@@ -2174,7 +2229,7 @@ driver supports Microchip USB Gigabit Ethernet interfaces, including:
 
 
 The
-**mxge**
+man:mxge[4]
 driver supports 10 Gigabit Ethernet adapters based on the
 Myricom LANai Z8E chips:
 
@@ -2185,7 +2240,7 @@ Myricom LANai Z8E chips:
 
 
 The
-**my**
+man:my[4]
 driver provides support for various NICs based on the Myson chipset.
 Supported models include:
 
@@ -2196,7 +2251,7 @@ Supported models include:
 
 
 The
-**nfe**
+man:nfe[4]
 driver supports the following NVIDIA MCP onboard adapters:
 
 *	NVIDIA nForce MCP Networking Adapter
@@ -2223,7 +2278,7 @@ driver supports the following NVIDIA MCP onboard adapters:
 
 
 The
-**nge**
+man:nge[4]
 driver supports National Semiconductor DP83820 and DP83821 based
 Gigabit Ethernet adapters including:
 
@@ -2241,7 +2296,7 @@ Gigabit Ethernet adapters including:
 
 
 The
-**oce**
+man:oce[4]
 driver supports the following network adapters:
 
 *	Emulex BladeEngine 2
@@ -2252,7 +2307,7 @@ driver supports the following network adapters:
 
 
 The
-**qlnxe**
+man:qlnxe[4]
 driver supports 25/40/100 Gigabit Ethernet & CNA Adapter based on the following
 chipsets:
 
@@ -2262,7 +2317,7 @@ chipsets:
 
 
 The
-**qlxgb**
+man:qlxgb[4]
 driver supports 10 Gigabit Ethernet & CNA Adapter based on the following
 chipsets:
 
@@ -2272,7 +2327,7 @@ chipsets:
 
 
 The
-**qlxgbe**
+man:qlxgbe[4]
 driver supports 10 Gigabit Ethernet & CNA Adapter based on the following
 chipsets:
 
@@ -2281,7 +2336,7 @@ chipsets:
 
 
 The
-**qlxge**
+man:qlxge[4]
 driver supports 10 Gigabit Ethernet & CNA Adapter based on the following
 chipsets:
 
@@ -2290,7 +2345,7 @@ chipsets:
 
 
 The
-**re**
+man:re[4]
 driver supports RealTek RTL8139C+, RTL8169, RTL816xS, RTL811xS, RTL8168,
 RTL810xE and RTL8111 based Fast Ethernet and Gigabit Ethernet adapters including:
 
@@ -2309,7 +2364,7 @@ RTL810xE and RTL8111 based Fast Ethernet and Gigabit Ethernet adapters including
 
 
 Adapters supported by the
-**rl**
+man:rl[4]
 driver include:
 
 *	Accton
@@ -2350,7 +2405,7 @@ driver include:
 
 
 The
-**rue**
+man:rue[4]
 driver supports RealTek RTL8150 based USB Ethernet
 adapters including:
 
@@ -2363,14 +2418,14 @@ adapters including:
 
 
 The
-**sfxge**
+man:sfxge[4]
 driver supports all 10Gb Ethernet adapters based on Solarflare SFC9000
 family controllers.
 
 
 
 The
-**sge**
+man:sge[4]
 device driver provides support for the following Ethernet controllers:
 
 *	SiS190 Fast Ethernet controller
@@ -2379,7 +2434,7 @@ device driver provides support for the following Ethernet controllers:
 
 
 The
-**sis**
+man:sis[4]
 driver supports Silicon Integrated Systems SiS 900 and SiS 7016 based
 Fast Ethernet adapters and embedded controllers, as well as Fast Ethernet
 adapters based on the National Semiconductor DP83815 (MacPhyter) and DP83816
@@ -2396,7 +2451,7 @@ Supported adapters include:
 
 
 Adapters supported by the
-**sk**
+man:sk[4]
 driver include:
 
 *	3Com 3C940 single port, 1000baseT adapter
@@ -2416,7 +2471,7 @@ driver include:
 
 
 The following devices are supported by the
-**smsc**
+man:smsc[4]
 driver:
 
 *	LAN9500, LAN9500A, LAN9505 and LAN9505A based Ethernet adapters
@@ -2427,7 +2482,7 @@ driver:
 
 
 The
-**ste**
+man:ste[4]
 driver supports Sundance Technologies ST201 based Fast Ethernet
 adapters and embedded controllers including:
 
@@ -2438,7 +2493,7 @@ adapters and embedded controllers including:
 
 
 The
-**stge**
+man:stge[4]
 driver provides support for various NICs based on the Sundance/Tamarack
 TC9021 based Gigabit Ethernet controller chips, including:
 
@@ -2454,7 +2509,7 @@ TC9021 based Gigabit Ethernet controller chips, including:
 
 
 The
-**ti**
+man:ti[4]
 driver supports Gigabit Ethernet adapters based on the
 Alteon Tigon I and II chips.
 The
@@ -2483,7 +2538,7 @@ not yet been tested:
 
 Gigabit Ethernet controllers built into the following Freescale
 system-on-chip devices are known to work with the
-**tsec**
+man:tsec[4]
 driver:
 
 *	MPC8349
@@ -2498,7 +2553,7 @@ devices, is also supported by this driver:
 
 
 The
-**udav**
+man:udav[4]
 driver supports the following adapters:
 
 *	Corega FEther USB-TXC
@@ -2507,7 +2562,7 @@ driver supports the following adapters:
 
 
 Devices supported by the
-**ufoma**
+man:ufoma[4]
 driver include:
 
 *	SHARP FOMA SH902i
@@ -2517,7 +2572,7 @@ driver include:
 
 
 The
-**uhso**
+man:uhso[4]
 driver should work with most devices from Option.
 The following devices have been verified to work
 
@@ -2544,7 +2599,7 @@ sysctl(8).
 
 
 The
-**ure**
+man:ure[4]
 driver supports the following USB Ethernet controllers:
 
 	Model:                                          Speed (Mbps):  
@@ -2556,7 +2611,7 @@ driver supports the following USB Ethernet controllers:
 
 
 The
-**urndis**
+man:urndis[4]
 driver supports the
 "tethering"
 functionality of many Android devices.
@@ -2564,7 +2619,7 @@ functionality of many Android devices.
 
 
 The
-**vge**
+man:vge[4]
 driver supports VIA Networking VT6120, VT6122, VT6130 and VT6132 based
 Gigabit Ethernet adapters including:
 
@@ -2575,7 +2630,7 @@ Gigabit Ethernet adapters including:
 
 
 The
-**vr**
+man:vr[4]
 driver supports VIA Technologies Rhine I, Rhine II, and Rhine III based
 Fast Ethernet adapters including:
 
@@ -2588,7 +2643,7 @@ Fast Ethernet adapters including:
 
 
 The
-**vte**
+man:vte[4]
 device driver provides support for the following Ethernet controllers:
 
 *	DM&P Vortex86 RDC R6040 Fast Ethernet controller
@@ -2599,7 +2654,7 @@ device driver provides support for the following Ethernet controllers:
 
 
 The
-**xl**
+man:xl[4]
 driver supports the following hardware:
 
 *	3Com 3c900-TPO
@@ -2640,7 +2695,7 @@ The man:adm6996fc[4] driver supports the Infineon ADM6996FC Fast Ethernet switch
 
 
 The
-**ar40xx_switch**
+link:https://man.freebsd.org/cgi/man.cgi?query=ar40xx&amp;apropos=&amp;&sektion=4&amp;format=html[ar40xx_switch]
 driver supports the following Gigabit Ethernet switch controllers:
 
 *	Qualcomm IPQ 4019 Five-port Gigabit Ethernet Switch
@@ -2649,7 +2704,7 @@ driver supports the following Gigabit Ethernet switch controllers:
 
 
 The
-**arswitch**
+man:arswitch[4]
 driver supports the following Ethernet switch controllers:
 
 *	Atheros AR8327 Seven-port Gigabit Ethernet Switch
@@ -2661,7 +2716,7 @@ driver supports the following Ethernet switch controllers:
 
 
 The
-**e6000sw**
+man:e6000sw[4]
 driver supports the following Gigabit Ethernet switch controllers:
 
 *	Marvell 88E6190
@@ -2673,7 +2728,7 @@ driver supports the following Gigabit Ethernet switch controllers:
 
 
 The
-**e6060sw**
+man:e6060sw[4]
 driver supports the following Fast Ethernet switch controllers:
 
 *	Marvell 88E6060
@@ -2685,7 +2740,7 @@ The man:felix[4] driver supports the Microsemi VSC9959 Felix Gigabit Ethernet sw
 
 
 The
-**ip17x**
+man:ip17x[4]
 driver supports the following Fast Ethernet switch controllers:
 
 *	IC Plus IP178C
@@ -2698,7 +2753,7 @@ The man:ksz8995ma[4] driver supports the Micrel KSZ8995MA/KSZ8995FQ Fast Etherne
 
 
 The
-**mtkswitch**
+man:mtkswitch[4]
 driver supports the following Ethernet switch controllers:
 
 *	MediaTek MT7628 (5 port Fast Ethernet)
@@ -2718,14 +2773,14 @@ The *ukswitch* driver is designed to support potentially unknown Ethernet Switch
 
 
 The
-**ath**
+man:ath[4]
 driver supports all Atheros Cardbus, ExpressCard, PCI and PCIe cards,
 except those that are based on the AR5005VL chipset.
 
 
 
 The following cards are among those supported by the
-**ath_hal**
+man:ath_hal[4]
 module:
 
 	*Card*               Chip      Bus        Standard  
@@ -2772,7 +2827,7 @@ module:
 
 
 The
-**bwi**
+man:bwi[4]
 driver supports Broadcom BCM43xx based wireless devices, including:
 
 	*Card*                   *Chip*     *Bus*       *Standard*  
@@ -2810,7 +2865,7 @@ uses does not support these chips.
 
 
 The
-**bwn**
+man:bwn[4]
 driver supports Broadcom BCM43xx based wireless devices, including:
 
 	*Card*                   *Chip*     *Bus*       *Standard*  
@@ -2835,14 +2890,14 @@ The newer firmware is too big to fit into these old chips.
 
 
 The
-**ipw**
+man:ipw[4]
 driver provides support for the
 Intel PRO/Wireless 2100a/b MiniPCI network adapter.
 
 
 
 The
-**iwi**
+man:iwi[4]
 driver supports the following wireless network devices:
 
 *	Intel PRO/Wireless 2200BG MiniPCI Network Connection
@@ -2852,7 +2907,7 @@ driver supports the following wireless network devices:
 
 
 The
-**iwlwifi**
+man:iwlwifi[4]
 driver supports PCIe devices from the
 **mvm**
 sub-driver with the following chipset generations:
@@ -2938,7 +2993,7 @@ These chipset generations match the following common device names:
 
 
 The
-**iwm**
+man:iwm[4]
 driver supports the following PCIe Wi-Fi devices:
 
 *	Intel Dual Band Wireless AC 3160
@@ -2956,7 +3011,7 @@ driver supports the following PCIe Wi-Fi devices:
 
 
 The
-**iwn**
+man:iwn[4]
 driver provides support for:
 
 *	Intel Centrino Advanced-N 6200
@@ -2989,7 +3044,7 @@ driver provides support for:
 
 
 The following cards are among those supported by the
-**malo**
+man:malo[4]
 driver:
 
 	*Card*             *Chip*     *Bus*  *Standard*  
@@ -3003,7 +3058,7 @@ Marvell 88W8363 IEEE 802.11n wireless network adapters (man:mwl[4] driver)
 
 
 The
-**otus**
+man:otus[4]
 driver provides support for Atheros AR9170 USB IEEE 802.11b/g/n
 wireless network adapters, including:
 
@@ -3029,7 +3084,7 @@ wireless network adapters, including:
 
 
 The
-**ral**
+man:ral[4]
 driver supports PCI/PCIe/CardBus wireless adapters based on Ralink Technology
 chipsets, including:
 
@@ -3125,7 +3180,7 @@ chipsets, including:
 
 
 The
-**rsu**
+man:rsu[4]
 driver provides support for Realtek RTL8188SU/RTL8192SU USB IEEE 802.11b/g/n
 wireless network adapters, including:
 
@@ -3148,7 +3203,7 @@ wireless network adapters, including:
 
 
 The
-**rtw88**
+man:rtw88[4]
 driver supports PCIe devices with the following chipsets:
 
 *	Realtek 802.11n  wireless 8723de (RTL8723DE)
@@ -3159,7 +3214,7 @@ driver supports PCIe devices with the following chipsets:
 
 
 The
-**rtw89**
+man:rtw89[4]
 driver supports PCIe devices with the following chipsets:
 
 *	Realtek 8851BE Wi-Fi 6  (RTL8851BE)
@@ -3171,7 +3226,7 @@ driver supports PCIe devices with the following chipsets:
 
 
 The
-**rtwn_pci**
+man:rtwn_pci[4]
 driver supports the following PCIe Wi-Fi devices:
 
 *	Realtek 802.11n wireless 8188  (RTL8188EE)
@@ -3180,7 +3235,7 @@ driver supports the following PCIe Wi-Fi devices:
 
 
 The
-**rtwn_usb**
+man:rtwn_usb[4]
 driver supports USB wireless network adapters based on certain
 Realtek RTL 8188/8192/8812 and 8821 chipsets, including:
 
@@ -3244,7 +3299,7 @@ Realtek RTL 8188/8192/8812 and 8821 chipsets, including:
 
 
 The
-**rum**
+man:rum[4]
 driver supports USB 2.0 wireless
 adapters based on the Ralink RT2501USB and RT2601USB chipsets,
 including:
@@ -3290,7 +3345,7 @@ including:
 
 
 The
-**run**
+man:run[4]
 driver supports the following wireless adapters:
 
 *	Airlink101 AWLL6090
@@ -3360,7 +3415,7 @@ driver supports the following wireless adapters:
 
 
 The
-**uath**
+man:uath[4]
 driver should work with the following adapters:
 
 	*Adapter*                            *Chipset*  
@@ -3387,7 +3442,7 @@ driver should work with the following adapters:
 
 
 The
-**upgt**
+man:upgt[4]
 driver supports USB 2.0 Conexant/Intersil PrismGT series wireless
 adapters based on the GW3887 chipset, among them:
 
@@ -3406,7 +3461,7 @@ adapters based on the GW3887 chipset, among them:
 
 
 The
-**ural**
+man:ural[4]
 driver supports USB 2.0 wireless adapters based on the Ralink Technology
 RT2500USB chipset, including:
 
@@ -3445,7 +3500,7 @@ An up to date list can be found at
 
 
 The
-**urtw**
+man:urtw[4]
 driver supports Realtek RTL8187B/L based wireless network devices, including:
 
 	*Card*                        *Radio*    *Bus*  
@@ -3463,14 +3518,14 @@ driver supports Realtek RTL8187B/L based wireless network devices, including:
 
 
 The
-**wpi**
+man:wpi[4]
 driver provides support for the
 Intel PRO/Wireless 3945ABG Mini PCIe network adapter.
 
 
 
 The following devices are known to be supported by the
-**zyd**
+man:zyd[4]
 driver:
 
 *	3COM 3CRUSB10075
@@ -3528,7 +3583,7 @@ driver:
 
 
 The
-**u3g**
+man:u3g[4]
 driver supports the following cellular modems:
 
 *	Option GT 3G Fusion, GT Fusion Quad, etc.
@@ -3556,14 +3611,8 @@ for the complete list.
 === Serial Interfaces
 
 
-The core component and the kernel interfaces talk to the hardware through the
-hardware interface.
-This interface serves as an abstraction of the hardware and allows varying
-UARTs to be used for serial communications.
-
-
 The
-**uart**
+man:uart[4]
 driver supports the following classes of UARTs:
 
 *	NS8250: standard hardware based on the 8250, 16450, 16550, 16650, 16750 or
@@ -3575,7 +3624,7 @@ driver supports the following classes of UARTs:
 
 
 The
-**scc**
+man:scc[4]
 driver supports the following classes of Serial Communications Controllers:
 
 *	QUICC: Freescale/NXP QUad Integrated Communications Controllers.
@@ -3584,7 +3633,7 @@ driver supports the following classes of Serial Communications Controllers:
 
 
 The
-**puc**
+man:puc[4]
 driver supports the following
 PCI multi-port serial and parallel adapters:
 
@@ -3892,7 +3941,7 @@ PCI multi-port serial and parallel adapters:
 
 
 The
-**uark**
+man:uark[4]
 driver supports the following adapters:
 
 *	HL USB-RS232
@@ -3903,7 +3952,7 @@ driver supports the following adapters:
 
 
 The
-**ubsa**
+man:ubsa[4]
 driver supports the following adapters:
 
 *	AnyData ADU-500A EV-DO modem
@@ -3917,13 +3966,13 @@ driver supports the following adapters:
 
 
 The
-**ubser**
+man:ubser[4]
 driver provides support for the BWCT console management serial adapters.
 
 
 
 The
-**uchcom**
+man:uchcom[4]
 driver supports the following USB to serial UART controllers:
 
 *	WinChipHead CH9102 (max 6Mbps)
@@ -3934,7 +3983,7 @@ driver supports the following USB to serial UART controllers:
 
 
 The
-**ucycom**
+man:ucycom[4]
 driver currently supports the following devices which incorporate
 Cypress USB to RS232 bridge chips:
 
@@ -3944,7 +3993,7 @@ Cypress USB to RS232 bridge chips:
 
 
 The
-**uftdi**
+man:uftdi[4]
 driver supports the following USB to serial UART controllers:
 
 *	FTDI FT4232H
@@ -3960,7 +4009,7 @@ driver supports the following USB to serial UART controllers:
 
 
 The
-**umcs**
+man:umcs[4]
 driver was tested on the following adapters:
 
 *	ST Lab U-360 two-port serial USB adapter
@@ -3969,7 +4018,7 @@ driver was tested on the following adapters:
 
 
 The
-**umct**
+man:umct[4]
 driver supports the following adapters:
 
 *	Belkin F5U109
@@ -3982,7 +4031,7 @@ driver supports the following adapters:
 
 
 The
-**uplcom**
+man:uplcom[4]
 driver supports the following devices and adapters:
 
 *	ADLINK ND-6530 USB-Serial Adapter
@@ -4048,7 +4097,7 @@ driver supports the following devices and adapters:
 
 
 The following devices should work with the
-**uslcom**
+man:uslcom[4]
 driver:
 
 *	AC-Services CAN, CIS-IBUS, IBUS and OBD interfaces
@@ -4128,7 +4177,7 @@ driver:
 
 
 The
-**uvscom**
+man:uvscom[4]
 driver supports the following adapters:
 
 *	DDI Pocket Air H" C@rd
@@ -4142,7 +4191,7 @@ driver supports the following adapters:
 
 
 The
-**snd_als4000**
+man:snd_als4000[4]
 driver supports the following sound cards:
 
 *	Avance Logic ALS4000
@@ -4150,7 +4199,7 @@ driver supports the following sound cards:
 
 
 The
-**snd_atiixp**
+man:snd_atiixp[4]
 driver supports the following audio chipsets:
 
 *	ATI IXP 200
@@ -4160,7 +4209,7 @@ driver supports the following audio chipsets:
 
 
 The
-**snd_cmi**
+man:snd_cmi[4]
 driver supports the following sound cards:
 
 *	CMedia CMI8338A
@@ -4171,7 +4220,7 @@ driver supports the following sound cards:
 
 
 The
-**snd_cs4281**
+man:snd_cs4281[4]
 driver supports the following sound cards:
 
 *	Crystal Semiconductor CS4281
@@ -4179,7 +4228,7 @@ driver supports the following sound cards:
 
 
 The
-**snd_csa**
+man:snd_csa[4]
 driver supports the following sound cards:
 
 *	Crystal Semiconductor CS4280
@@ -4204,7 +4253,7 @@ driver yet.
 
 
 The
-**snd_emu10k1**
+man:snd_emu10k1[4]
 driver supports the following sound cards:
 
 *	Creative SoundBlaster Live! (EMU10K1 Chipset)
@@ -4215,7 +4264,7 @@ driver supports the following sound cards:
 
 
 The
-**snd_emu10kx**
+man:snd_emu10kx[4]
 driver supports the following sound cards:
 
 *	Creative Sound Blaster Live! (EMU10K1 Chipset).
@@ -4252,7 +4301,7 @@ similar to some supported ones):
 
 
 The
-**snd_envy24**
+man:snd_envy24[4]
 driver supports the following audio devices:
 
 *	M-Audio Audiophile 2496
@@ -4265,7 +4314,7 @@ Recording and other features of these cards are not supported.
 
 
 The
-**snd_envy24ht**
+man:snd_envy24ht[4]
 driver supports the following audio devices:
 
 *	Audiotrak Prodigy 7.1
@@ -4289,7 +4338,7 @@ Recording and other features of these cards are not supported.
 
 
 The
-**snd_es137x**
+man:snd_es137x[4]
 driver supports the following sound cards:
 
 *	Creative CT5880-A
@@ -4307,7 +4356,7 @@ driver supports the following sound cards:
 
 
 The
-**snd_fm801**
+man:snd_fm801[4]
 driver supports audio devices based on the following chipset:
 
 *	Forte Media FM801
@@ -4315,7 +4364,7 @@ driver supports audio devices based on the following chipset:
 
 
 The
-**snd_hda**
+man:snd_hda[4]
 driver supports PCI class 04h
 (multimedia),
 subclass 03h
@@ -4326,7 +4375,7 @@ Intel High Definition Audio 1.0 specification.
 
 
 The
-**snd_hdspe**
+man:snd_hdspe[4]
 driver supports the following audio devices:
 
 *	RME HDSPe AIO
@@ -4342,7 +4391,7 @@ be mapped to ADAT channels and vice versa.
 
 
 The
-**snd_ich**
+man:snd_ich[4]
 driver supports the following audio devices:
 
 *	AMD 768
@@ -4367,7 +4416,7 @@ driver supports the following audio devices:
 
 
 The
-**snd_maestro3**
+man:snd_maestro3[4]
 driver supports the following audio devices:
 
 *	ESS Technology Allegro-1
@@ -4376,7 +4425,7 @@ driver supports the following audio devices:
 
 
 The
-**snd_neomagic**
+man:snd_neomagic[4]
 driver supports the following audio devices:
 
 *	NeoMagic 256AV
@@ -4385,7 +4434,7 @@ driver supports the following audio devices:
 
 
 The
-**snd_solo**
+man:snd_solo[4]
 driver supports the following sound cards:
 
 *	ESS Solo-1 (ES1938 Chipset)
@@ -4394,7 +4443,7 @@ driver supports the following sound cards:
 
 
 The
-**snd_spicds**
+man:snd_spicds[4]
 driver supports the following codecs:
 
 *	AK4358
@@ -4407,7 +4456,7 @@ driver supports the following codecs:
 
 
 The
-**snd_t4dwave**
+man:snd_t4dwave[4]
 driver supports the following audio devices:
 
 *	Acer Labs M5451
@@ -4419,7 +4468,7 @@ driver supports the following audio devices:
 
 
 The
-**snd_via8233**
+man:snd_via8233[4]
 driver supports the following audio chipsets:
 
 *	VIA VT8233
@@ -4432,7 +4481,7 @@ driver supports the following audio chipsets:
 
 
 The
-**snd_via82c686**
+man:snd_via82c686[4]
 driver supports audio devices based on the following chipset:
 
 *	VIA 82C686A
@@ -4440,7 +4489,7 @@ driver supports audio devices based on the following chipset:
 
 
 The
-**snd_vibes**
+man:snd_vibes[4]
 driver supports audio devices based on the following chipset:
 
 *	S3 SonicVibes
@@ -4465,7 +4514,7 @@ USB serial interfaces can be found in <<serial,Serial Interfaces>>.
 
 
 The
-**atp**
+man:atp[4]
 driver provides support for the following Product IDs:
 
 *	PowerBooks, iBooks (IDs: 0x020e, 0x020f, 0x0210, 0x0214, 0x0215, 0x0216)
@@ -4483,10 +4532,16 @@ driver provides support for the following Product IDs:
 	0x0259, 0x025a, 0x025b, 0x0262, 0x0262, 0x0263, 0x0264, 0x0290, 0x0291,
 	0x0292)
 
+To discover the product&#45;id of a touchpad, search for 'Trackpad' in the
+output of
+lshal(1)
+and look up the property
+**usb_device.product_id**.
+
 
 
 The
-**atopcase**
+man:atopcase[4]
 driver supports the following MacBooks produced in 2015-2018 years:
 
 *	Macbook8,1
@@ -4504,7 +4559,7 @@ driver supports the following MacBooks produced in 2015-2018 years:
 
 
 The
-**abtn**
+man:abtn[4]
 driver supports extended keyboard keys (special F-keys) on the following devices:
 
 *	Apple iBook Keyboard
@@ -4513,7 +4568,7 @@ driver supports extended keyboard keys (special F-keys) on the following devices
 
 
 Devices supported by the
-**akbd**
+man:akbd[4]
 driver include:
 
 *	Apple Extended Keyboard
@@ -4524,7 +4579,7 @@ driver include:
 
 
 Devices supported by the
-**ams**
+man:ams[4]
 driver include:
 
 *	Apple Mouse
@@ -4534,11 +4589,12 @@ driver include:
 *	Apple PowerBook Trackpad
 
 
+
 The man:ehci[4] driver supports USB 2.0 controllers implementing the Enhanced Host Controller Interface standard.
 
 
 The
-**ohci**
+man:ohci[4]
 driver supports all OHCI v1.0 compliant controllers including:
 
 *	AcerLabs M5237 (Aladdin-V)
@@ -4552,7 +4608,7 @@ driver supports all OHCI v1.0 compliant controllers including:
 
 
 The following devices are supported by the
-**ugold**
+man:ugold[4]
 driver:
 
 *	RDing TEMPer1V1.2
@@ -4560,7 +4616,7 @@ driver:
 
 
 The
-**uhci**
+man:uhci[4]
 driver supports all UHCI v1.1 compliant controllers including:
 
 *	Intel 82371AB/EB (PIIX4)
@@ -4570,7 +4626,7 @@ driver supports all UHCI v1.1 compliant controllers including:
 
 
 The
-**uipaq**
+man:uipaq[4]
 driver supports the following iPAQ devices:
 
 *	ASUS P535 PDA
@@ -4587,7 +4643,7 @@ driver supports the following iPAQ devices:
 
 
 The
-**umass**
+man:umass[4]
 driver supports USB Mass Storage devices such as:
 
 *	USB thumb drives
@@ -4616,7 +4672,7 @@ usb_quirk(4).
 
 
 The following devices are supported by the
-**urio**
+man:urio[4]
 driver:
 
 *	Diamond MultiMedia Rio 500
@@ -4626,7 +4682,7 @@ driver:
 
 
 Devices supported by the
-**umodem**
+man:umodem[4]
 driver include:
 
 *	3Com 5605
@@ -4643,7 +4699,7 @@ driver include:
 
 
 The
-**rtsx**
+man:rtsx[4]
 driver supports the following Realtek SD card readers:
 
 *	RTS5209
@@ -4660,7 +4716,7 @@ driver supports the following Realtek SD card readers:
 
 
 The
-**ulpt**
+man:ulpt[4]
 driver provides support for USB printers and parallel printer
 conversion cables, including the following:
 
@@ -4669,10 +4725,14 @@ conversion cables, including the following:
 *	Canon BJ F850, S600
 *	Canon LBP-1310, 350
 *	Entrega USB-to-parallel printer adapter
+*	Hewlett-Packard HP Deskjet 3420 (P/N: C8947A #ABJ)
+*	Oki Data MICROLINE ML660PS
+*	Seiko Epson PM-900C, 880C, 820C, 730C
+
 
 
 The
-**umct**
+man:umct[4]
 driver supports the following adapters:
 
 *	Belkin F5U109
@@ -4684,7 +4744,7 @@ driver supports the following adapters:
 
 
 The
-**uvisor**
+man:uvisor[4]
 driver supports the following devices:
 
 *	Aceeca Mez1000 RDA
@@ -4712,7 +4772,7 @@ driver supports the following devices:
 
 
 The
-**xhci**
+man:xhci[4]
 driver supports
 `XHCI`
 compatible controllers having PCI class 12 (serial bus),
@@ -4724,7 +4784,7 @@ subclass 3 (USB) and programming interface 48 (XHCI).
 
 
 The
-**fwohci**
+man:fwohci[4]
 driver provides support for PCI/CardBus FireWire interface cards.
 The driver supports the following IEEE 1394 OHCI chipsets:
 
@@ -4760,7 +4820,7 @@ The driver supports the following IEEE 1394 OHCI chipsets:
 
 
 The
-**sbp**
+man:sbp[4]
 driver supports FireWire Serial Bus Protocol 2
 (SBP-2)
 storage devices.
@@ -4771,7 +4831,7 @@ storage devices.
 
 
 The
-**ng_ubt**
+man:ng_ubt[4]
 driver supports all Bluetooth USB devices that conform with
 the Bluetooth specification v1.1, including:
 
@@ -4795,7 +4855,7 @@ The **ccp** driver supports the AMD Platform Security Processor (PSP) Cryptograp
 
 
 The
-**ccr**
+man:ccr[4]
 driver supports the crypto accelerator engine included on adapters
 based on the T6 ASIC:
 
@@ -4810,7 +4870,7 @@ The man:glxsb[4] driver supports the security block found in AMD Geode LX device
 
 
 The
-**hifn**
+man:hifn[4]
 driver supports various cards containing the Hifn 7751, 7951,
 7811, 7955, and 7956
 chipsets, such as:
@@ -4854,7 +4914,7 @@ The man:padlock[4] driver supports the AES/RNG/RSA/SHA-1, and SHA-2 engine found
 
 
 The
-**qat**
+man:qat[4]
 driver supports the following Intel QuickAssist Technology Engines:
 
 *	Intel (R) C62x Chipset
@@ -4870,7 +4930,7 @@ The man:qat_c2xxx[4] driver supports the Intel QuickAssist Technology engine fou
 
 
 The
-**safe**
+man:safe[4]
 driver supports the following SafeXcel chips:
 
 	SafeNet 1141    The original chipset.
@@ -4882,7 +4942,7 @@ driver supports the following SafeXcel chips:
 
 
 The
-**safexcel**
+man:safexcel[4]
 driver supports the cryptographic acceleration functions of the
 Inside Secure EIP-97 device found on some Marvell systems-on-chip.
 
@@ -4931,7 +4991,7 @@ Information regarding specific video cards and compatibility with Xorg can be fo
 
 
 The
-**ads111x**
+man:ads111x[4]
 driver provides support for the following devices:
 
 	ADS1013     ADS1113  
@@ -4941,7 +5001,7 @@ driver provides support for the following devices:
 
 
 The
-**amdsbwd**
+man:amdsbwd[4]
 driver supports the following chipsets:
 
 *	AMD SB600/7x0/8x0/9x0 southbridges
@@ -4952,7 +5012,7 @@ driver supports the following chipsets:
 
 
 The
-**at45d**
+man:at45d[4]
 driver provides support for the following devices:
 
 *	AT45DB011B
@@ -4968,7 +5028,7 @@ driver provides support for the following devices:
 
 
 The
-**gpioths**
+man:gpioths[4]
 driver provides support for the following devices:
 
 	DHT11       DHT12  
@@ -4984,7 +5044,7 @@ but this driver supports only the single-wire connection option.
 
 
 
-**ig4**
+man:ig4[4]
 supports the I2C controllers based on Synopsys DesignWare IP that can be found
 in Intel(R) Core(TM) processors starting from the fourth generation, Intel(R)
 Bay Trail, Apollo Lake SoC families, and some AMD systems.
@@ -4992,7 +5052,7 @@ Bay Trail, Apollo Lake SoC families, and some AMD systems.
 
 
 The
-**intpm**
+man:intpm[4]
 driver supports the following chipsets:
 
 *	Intel 82371AB/82443MX
@@ -5005,7 +5065,7 @@ driver supports the following chipsets:
 
 
 The
-**mx25l**
+man:mx25l[4]
 driver supports the following spi flash memory devices:
 
 *	AT25DF641
@@ -5040,14 +5100,14 @@ driver supports the following spi flash memory devices:
 
 
 The current version of the
-**netfpga10g_nf10bmac**
+man:netfpga10g_nf10bmac[4]
 driver works with one PIO mode interface of the
 NetFPGA-10G Embedded CPU Ethernet Core version 1.00a.
 
 
 
 The following PLX/Avago/Broadcom chips are supported by the
-**ntb_hw_plx**
+man:ntb_hw_plx[4]
 driver:
 
 *	PEX 8713
@@ -5061,7 +5121,7 @@ driver:
 
 
 These temperature sensors are supported by the
-**ow_temp**
+man:ow_temp[4]
 driver:
 
 DS1820
@@ -5093,7 +5153,7 @@ The driver supports Family codes 0x10, 0x22, 0x28, and 0x3b.
 
 
 The
-**superio**
+man:superio[4]
 driver supports a multitude of Super I/O controllers produced by Nuvoton,
 formerly known as Winbond, and ITE, namely:
 
@@ -5120,7 +5180,7 @@ formerly known as Winbond, and ITE, namely:
 
 
 The
-**udl**
+man:udl[4]
 driver supports USB display devices
 based on the DisplayLink DL-120 / DL-160 graphic chip, including:
 
@@ -5161,3 +5221,4 @@ Unitek Y-2240 USB to DVI
 VideoHome NBdock1920
 
 i-tec USB 2.0 Docking Station (USBDVIDOCK)
+
