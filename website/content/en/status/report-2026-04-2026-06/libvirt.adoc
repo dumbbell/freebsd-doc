@@ -21,3 +21,5 @@ Contact: Roman Bogorodskiy <novel@FreeBSD.org>
 * Complete suspend/resume support.
 * Continue implementing features based on the QEMU Guest Agent.
 * Continue extending CI, cover the new guest agent based features with new tests.
+
+Sponsor: The FreeBSD Foundation
