@@ -456,9 +456,9 @@ FreeBSD-CURRENT uses the  `main` branch.
 
 `main` is the default branch.
 
-For FreeBSD-STABLE, branch names include `stable/12` and `stable/13`.
+For FreeBSD-STABLE, branch names include `stable/{rel-latest-major}` and `stable/{rel-legacy-major}`.
 
-For FreeBSD-RELEASE, release engineering branch names include `releng/12.4` and `releng/13.2`.
+For FreeBSD-RELEASE, release engineering branch names include `releng/{rel-latest}` and `releng/{rel-legacy}`.
 
 https://www.freebsd.org/releng/[] shows:
 
@@ -467,8 +467,8 @@ https://www.freebsd.org/releng/[] shows:
 
 Examples:
 
-* tag https://cgit.freebsd.org/src/tag/?h=release/13.1.0[release/13.1.0] on the https://cgit.freebsd.org/src/log/?h=releng/13.1[releng/13.1] branch
-* tag https://cgit.freebsd.org/src/tag/?h=release/13.2.0[release/13.2.0] on the https://cgit.freebsd.org/src/log/?h=releng/13.2[releng/13.2] branch.
+* tag https://cgit.freebsd.org/src/tag/?h=release/{rel-latest}.0[release/{rel-latest}.0] on the https://cgit.freebsd.org/src/log/?h=releng/{rel-latest}[releng/{rel-latest}] branch
+* tag https://cgit.freebsd.org/src/tag/?h=release/{rel-legacy}.0[release/{rel-legacy}.0] on the https://cgit.freebsd.org/src/log/?h=releng/{rel-legacy}[releng/{rel-legacy}] branch.
 
 ===== Repositories
 Please see the crossref:committers-guide[admin,Administrative Details] for the latest information on where to get FreeBSD sources.
@@ -876,7 +876,7 @@ For more on this topic, https://www.freecodecamp.org/news/the-ultimate-guide-to-
 It is a good resource for issues that arise occasionally but are too obscure for this guide.
 
 ===== Switching to a Different FreeBSD Branch
-If you wish to shift from stable/12 to the current branch.
+If you wish to shift from stable/{rel-latest-major} to the current branch.
 If you have a deep clone, the following will suffice:
 [source,shell]
 ....
@@ -886,18 +886,18 @@ If you have a deep clone, the following will suffice:
 If you have a local branch, though, there are one or two caveats.
 First, rebase will rewrite history, so you will likely want to do something to save it.
 Second, jumping branches tends to cause more conflicts.
-If we pretend the example above was relative to stable/12, then to move to `main`, I'd suggest the following:
-[source,shell]
+If we pretend the example above was relative to stable/{rel-latest-major}, then to move to `main`, I'd suggest the following:
+[source,shell,subs=attributes]
 ....
 % git checkout no-color-ls
-% git checkout -b no-color-ls-stable-12   # create another name for this branch
-% git rebase -i stable/12 no-color-ls --onto main
+% git checkout -b no-color-ls-stable-{rel-latest-major}   # create another name for this branch
+% git rebase -i stable/{rel-latest-major} no-color-ls --onto main
 ....
 
 What the above does is checkout no-color-ls.
-Then create a new name for it (no-color-ls-stable-12) in case you need to get back to it.
+Then create a new name for it (`no-color-ls-stable-{rel-latest-major}`) in case you need to get back to it.
 Then you rebase onto the `main` branch.
-This will find all the commits to the current no-color-ls branch (back to where it meets up with the stable/12 branch) and then it will
+This will find all the commits to the current no-color-ls branch (back to where it meets up with the stable/{rel-latest-major} branch) and then it will
 replay them onto the `main` branch creating a new no-color-ls branch there (which is why I had you create a place holder name).
 
 [[mfc-with-git]]
@@ -909,18 +909,18 @@ For multiple commits, use `git rebase -i` to squash them together and edit the c
 
 ==== Single commit MFC
 
-[source,shell]
+[source,shell,subs=attributes]
 ....
-% git checkout stable/X
+% git checkout stable/{rel-latest-major}
 % git cherry-pick -x $HASH --edit
 ....
 
 For MFC commits, for example a vendor import, you would need to specify one parent for cherry-pick purposes.
 Normally, that would be the "first parent" of the branch you are cherry-picking from, so:
 
-[source,shell]
+[source,shell,subs=attributes]
 ....
-% git checkout stable/X
+% git checkout stable/{rel-latest-major}
 % git cherry-pick -x $HASH -m 1 --edit
 ....
 
@@ -939,9 +939,9 @@ The process is the same for either a typical merge or an exceptional direct comm
 * Leave both "cherry picked from" lines in the commit message.
 * Be sure to add the `Approved by:` line when you are in the editor.
 
-[source,shell]
+[source,shell,subs=attributes]
 ....
-% git checkout releng/13.0
+% git checkout releng/{rel-latest-next}
 % git cherry-pick -x $HASH --edit
 ....
 
@@ -1006,9 +1006,9 @@ to do that. The `--abort` will cleanup the failed first attempt.
 
 If you do a MFC, and it goes horribly wrong and you want to start over,
 then the easiest way is to use `git reset --hard` like so:
-[source,shell]
+[source,shell,subs=attributes]
 ....
-% git reset --hard freebsd/stable/12
+% git reset --hard freebsd/stable/{rel-latest-major}
 ....
 though if you have some revs you want to keep, and others you don't,
 using `git rebase -i` is better.
